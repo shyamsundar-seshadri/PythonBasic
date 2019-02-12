@@ -26,7 +26,11 @@ def main():
     print("multiplication of ",a,"and",b,"is :",multiply(b,a))
     print("division of ",a,"and",b,"is :",divide(b,a))
     print("percentage of ",a,"and",b,"is :",percent(b,a))
-main()
+
+if __name__ == "__main__":
+    main()
+
+    
 '''
 print('\n\n')
 print("#"*20)
