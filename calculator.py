@@ -18,13 +18,16 @@ def percent(big, small):
     return big*(small/100)
 
 #Main Start here
-a=10
-b=20
-print("addition of ",a,"and",b,"is :",add(a,b))
-print("subtraction of ",a,"and",b,"is :",sub(b,a))
-print("multiplication of ",a,"and",b,"is :",multiply(b,a))
-print("division of ",a,"and",b,"is :",divide(b,a))
-print("percentage of ",a,"and",b,"is :",percent(b,a))
+def main():
+    a=10
+    b=20
+    print("addition of ",a,"and",b,"is :",add(a,b))
+    print("subtraction of ",a,"and",b,"is :",sub(b,a))
+    print("multiplication of ",a,"and",b,"is :",multiply(b,a))
+    print("division of ",a,"and",b,"is :",divide(b,a))
+    print("percentage of ",a,"and",b,"is :",percent(b,a))
+main()
+'''
 print('\n\n')
 print("#"*20)
 print('World Cup Finals')
@@ -56,7 +59,7 @@ print(multiply(10))
 print(multiply(10,2))
 print("#"*40)
 
-
+'''
 
     
 
