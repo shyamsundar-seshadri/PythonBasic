@@ -56,55 +56,7 @@ print(multiply(10))
 print(multiply(10,2))
 print("#"*40)
 
-print("Excercise 09")
-print('###odd numbers from 120 to 150##')
-vals = range(121,150,2)
-print("odd nums are:")
-for val in vals:
-    print(val)
 
-print("Excercise 10")
-vals = range(94,109)
-for val in vals:
-    if(val%100 == 0):
-        print(val/2)
-    elif(val %100 == 1):
-        print(val * 2)
-
-print("Excercise 11 - Fibonocci")
-def fibanocci(a,b):
-    temp = a+b
-    a = b
-    b = temp
-    return a,b
-
-print("#"*40)
-a=0
-b=1
-i = 1
-rage_val = input("Enter Fibonocci limit")
-print(a)
-print(b)
-while i < int(rage_val) - 1:
-    (a,b) = fibanocci (a,b)
-    print(b)
-    i += 1
-
-print("#"*40)
-print("Excercise 12")
-lucky_num = 12
-user_num = 0
-user_num = input("Give it first try: ")
-while int(lucky_num) != int(user_num):
-    if abs(int(lucky_num) -  int(user_num)) < 3:
-        user_num = input("Dood . Yo Almost There !!. Just Try Once Again: ")
-    elif int(lucky_num) > int(user_num):
-        user_num = input("Hmm :( Too Low ! Try Again: ")
-    else:
-        user_num = input("Woah ! That's too high. Try again: ")
-        
-
-print("Bingo !! Yo Got it right !! There you go. IT IS - ",lucky_num)
 
     
 
