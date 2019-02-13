@@ -22,11 +22,15 @@ if startLineArg == "":
 else:
     startLine = int(startLineArg)
 
-if startLineArg  == "":
-    endLine = 0
+if endLineArg  == "":
+    endLine = int(startLineArg) + 1
 else:
     endLine = int(endLineArg)
 
+if startLine > endLine:
+    print (f"Start Line {startLine} should be lesser than Endline {endLine}")
+    quit()
+    
 if fileName != "":
     readFile.fetch_lines(fileName,startLine,endLine )
 
